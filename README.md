@@ -133,8 +133,8 @@ OpenAI’s Structured Outputs supports many common JSON Schema keywords, but als
 
 - ✔ **type**
 - ✔ **properties**
-- ✔ **required**
-- ✔ **additionalProperties**
+- ✔ **required** (mandatory): an array that **must** list **all** property names declared under `properties`.
+- ✔ **additionalProperties** (mandatory): must be explicitly set (`false` or a subschema) to control extra fields.
 - ✔ **dependencies** (if supported)
 - ✔ **patternDependentSchemas** (if supported)
 - ✘ **patternProperties**, **unevaluatedProperties**, **propertyNames**, **minProperties**, **maxProperties**
