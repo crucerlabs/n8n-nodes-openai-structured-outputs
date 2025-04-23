@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-openai-structured-outputs",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "This is a community node for n8n that enables you to extract structured JSON from unstructured text by leveraging OpenAI’s **Structured Outputs** feature with a user‑provided JSON Schema.",
   "keywords": [
     "n8n-community-node-package"
