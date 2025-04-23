@@ -39,7 +39,7 @@
   "n8n": {
     "n8nNodesApiVersion": 1,
     "credentials": [
-      "dist/credentials/OpenAiApi.credentials.js"
+      "dist/credentials/openAiStructuredOutputApi.credentials.js"
     ],
     "nodes": [
       "dist/nodes/OpenAiStructuredOutput/OpenAiStructuredOutput.node.js"
