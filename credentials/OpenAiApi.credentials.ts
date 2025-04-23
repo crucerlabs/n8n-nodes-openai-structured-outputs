@@ -8,9 +8,9 @@ import type {
 export class OpenAiApi implements ICredentialType {
 	name = 'openAiApi';
 
-	displayName = 'OpenAi';
+	displayName = 'OpenAI API';
 
-	documentationUrl = 'openAi';
+	documentationUrl = 'https://docs.n8n.io/integrations/builtin/credentials/openai/';
 
 	properties: INodeProperties[] = [
 		{

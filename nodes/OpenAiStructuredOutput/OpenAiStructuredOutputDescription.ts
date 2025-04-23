@@ -104,7 +104,7 @@ export const structuredOutputOperations: INodeProperties[] = [
 			{
 				name: 'Extract JSON',
 				value: 'extract',
-				action: 'Extrae JSON según el esquema',
+				action: 'Extract JSON according to schema',
 				routing: {
 					request: {
 						method: 'POST',
@@ -127,12 +127,12 @@ export const structuredOutputFields: INodeProperties[] = [
 		type: 'options',
 		default: 'gpt-4o',
 		options: [
-			{ name: 'gpt-4o-mini', value: 'gpt-4o-mini' },
 			{ name: 'gpt-4o', value: 'gpt-4o' },
-			{ name: 'o1', value: 'o1' },
-			{ name: 'o1-mini', value: 'o1-mini' },
-			{ name: 'o3', value: 'o3' },
-			{ name: 'o3-mini', value: 'o3-mini' },
+			{ name: 'gpt-4o-mini', value: 'gpt-4o-mini' },
+			{ name: 'gpt-o1', value: 'gpt-o1-model' },
+			{ name: 'gpt-o1-mini', value: 'gpt-o1-mini' },
+			{ name: 'gpt-o3', value: 'gpt-o3' },
+			{ name: 'gpt-o3-mini', value: 'gpt-o3-mini' },
 		],
 		routing: {
 			send: {

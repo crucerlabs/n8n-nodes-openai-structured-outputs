@@ -1,4 +1,4 @@
-import { INodeType, INodeTypeDescription, NodeConnectionType } from 'n8n-workflow';
+import { INodeType, INodeTypeDescription } from 'n8n-workflow';
 import {
 	structuredOutputFields,
 	structuredOutputOperations,
@@ -17,8 +17,8 @@ export class OpenAiStructuredOutput implements INodeType {
 		defaults: {
 			name: 'OpenAI',
 		},
-		inputs: [NodeConnectionType.Main],
-		outputs: [NodeConnectionType.Main],
+		inputs: ['main'],
+		outputs: ['main'],
 		credentials: [
 			{
 				name: 'openAiApi',
