@@ -14,7 +14,7 @@ export class OpenAiApi implements ICredentialType {
 
 	properties: INodeProperties[] = [
 		{
-			displayName: 'API Key',
+			displayName: 'Api Key',
 			name: 'apiKey',
 			type: 'string',
 			typeOptions: { password: true },
