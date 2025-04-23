@@ -1,5 +1,5 @@
 <p align="center">
-  <img src=".logo.svg" width="130" alt="OpenAI Structured Outputs Logo"/>
+  <img src="logo.svg" width="130" alt="OpenAI Structured Outputs Logo"/>
 </p>
 
 # n8n-nodes-openai-structured-outputs
