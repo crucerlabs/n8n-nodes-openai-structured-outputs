@@ -178,4 +178,4 @@ OpenAI’s Structured Outputs supports many common JSON Schema keywords, but als
 
 ---
 
-_Created by Diego Sebastian Cruz Cervantes · MIT License_
+_Created by Crucerlabs · MIT License_
