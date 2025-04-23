@@ -15,6 +15,9 @@
     "type": "git",
     "url": "https://github.com/SebasCrucer/n8n-nodes-openai-structured-outputs.git"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "engines": {
     "node": ">=18.10",
     "pnpm": ">=9.1"
