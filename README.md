@@ -34,7 +34,7 @@ You can install **n8n-nodes-openai-structured-outputs** in two ways—via npm or
 2. Click **Install**.
 3. Click **Browse**—n8n will show npm packages tagged `n8n-community-node-package`.
 4. Search for and select **n8n-nodes-openai-structured-outputs**.
-   - To install a specific version, append `@<version>` (e.g. `n8n-nodes-openai-structured-outputs@0.1.7`).
+   - To install a specific version, append `@<version>` (e.g. `n8n-nodes-openai-structured-outputs@*.*.*`).
 5. Check **“I understand the risks of installing unverified code from a public source”**, then click **Install**.
 6. After installation, the **OpenAI Structured Output** node appears under **Community Nodes → Utility**.
 
@@ -44,7 +44,7 @@ You can install **n8n-nodes-openai-structured-outputs** in two ways—via npm or
 
 - **Uninstall**: In **Settings → Community Nodes**, click the three-dot menu next to **OpenAI Structured Output** and choose **Uninstall**.
 - **Upgrade to Latest**: If a new version is available, an **Update** button appears next to the node—click it to upgrade.
-- **Install Specific Version**: Uninstall first, then reinstall using the exact npm package name with version (e.g. `n8n-nodes-openai-structured-outputs@0.2.0`).
+- **Install Specific Version**: Uninstall first, then reinstall using the exact npm package name with version (e.g. `n8n-nodes-openai-structured-outputs@*.*.*`).
 - **Downgrade**: Same as installing a specific older version.
 
 ---

@@ -11,7 +11,7 @@ export class OpenAiStructuredOutput implements INodeType {
 		hidden: true,
 		icon: { light: 'file:openAi.svg', dark: 'file:openAi.dark.svg' },
 		group: ['transform'],
-		version: [1, 1.1],
+		version: 1,
 		subtitle: '={{$parameter["operation"] + ": " + $parameter["resource"]}}',
 		description: 'Consume Open AI',
 		defaults: {
