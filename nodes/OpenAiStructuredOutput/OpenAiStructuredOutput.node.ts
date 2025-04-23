@@ -15,13 +15,13 @@ export class OpenAiStructuredOutput implements INodeType {
 		subtitle: '={{$parameter["operation"]}}',
 		description: 'Consume Open AI',
 		defaults: {
-			name: 'OpenAI',
+			name: 'OpenAI Structured Output',
 		},
 		inputs: ['main'],
 		outputs: ['main'],
 		credentials: [
 			{
-				name: 'openAiApi',
+				name: 'openAiStructuredOutputApi',
 				required: true,
 			},
 		],

@@ -6,9 +6,9 @@ import type {
 } from 'n8n-workflow';
 
 export class OpenAiApi implements ICredentialType {
-	name = 'openAiApi';
+	name = 'openAiStructuredOutputApi';
 
-	displayName = 'OpenAI API';
+	displayName = 'OpenAi Structured Output API';
 
 	documentationUrl = 'https://docs.n8n.io/integrations/builtin/credentials/openai/';
 
