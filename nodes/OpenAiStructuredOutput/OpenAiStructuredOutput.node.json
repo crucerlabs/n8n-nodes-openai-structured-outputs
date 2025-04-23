@@ -1,8 +1,9 @@
 {
-	"node": "n8n-nodes-base.openAi",
+	"node": "n8n-nodes-base.openAiStructuredOutput",
 	"nodeVersion": "1.0",
 	"codexVersion": "1.0",
 	"categories": [
+		"Development",
 		"Utility"
 	],
 	"resources": {
