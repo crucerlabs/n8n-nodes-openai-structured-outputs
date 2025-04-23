@@ -42,7 +42,7 @@
       "dist/credentials/OpenAiApi.credentials.js"
     ],
     "nodes": [
-      "dist/nodes/OpenAiStructuredOutput.node.js"
+      "dist/nodes/OpenAiStructuredOutput/OpenAiStructuredOutput.node.js"
     ]
   },
   "devDependencies": {
