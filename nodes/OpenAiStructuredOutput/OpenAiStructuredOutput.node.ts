@@ -1,14 +1,14 @@
 import { INodeType, INodeTypeDescription } from 'n8n-workflow';
-import {
-	structuredOutputFields,
-	structuredOutputOperations,
-} from './OpenAiStructuredOutputDescription';
+import { operation } from './properties/operation';
+import { model } from './properties/model';
+import { jsonSchema } from './properties/jsonSchema';
+import { text } from './properties/text';
+import { temperature } from './properties/temperature';
 
 export class OpenAiStructuredOutput implements INodeType {
 	description: INodeTypeDescription = {
 		displayName: 'OpenAI Structured Output',
 		name: 'openAiStructuredOutput',
-		hidden: true,
 		icon: { light: 'file:openAi.svg', dark: 'file:openAi.dark.svg' },
 		group: ['transform'],
 		version: 1,
@@ -21,7 +21,7 @@ export class OpenAiStructuredOutput implements INodeType {
 		outputs: ['main'],
 		credentials: [
 			{
-				name: 'openAiStructuredOutputApi',
+				name: 'openAiApi',
 				required: true,
 			},
 		],
@@ -30,6 +30,6 @@ export class OpenAiStructuredOutput implements INodeType {
 			baseURL:
 				'={{ $credentials.url?.split("/").slice(0,-1).join("/") ?? "https://api.openai.com" }}',
 		},
-		properties: [...structuredOutputOperations, ...structuredOutputFields],
+		properties: [...operation, ...model, ...jsonSchema, ...text, ...temperature],
 	};
 }
