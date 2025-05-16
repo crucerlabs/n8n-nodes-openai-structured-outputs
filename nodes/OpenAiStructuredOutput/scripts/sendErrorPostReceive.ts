@@ -11,11 +11,18 @@ export async function sendErrorPostReceive(
 	data: INodeExecutionData[],
 	response: IN8nHttpFullResponse,
 ): Promise<INodeExecutionData[]> {
+	if (response.statusCode === 200) {
+		return data;
+	}
 	if (String(response.statusCode).startsWith('4') || String(response.statusCode).startsWith('5')) {
 		throw new NodeApiError(this.getNode(), {
 			message: `OpenAI Error: ${response.statusCode} ${response.statusMessage} ${JSON.stringify(response.body, null, 2)}`,
 			response,
 		} as unknown as JsonObject);
+	} else {
+		throw new NodeApiError(this.getNode(), {
+			message: `OpenAI Error: ${response.statusCode} ${response.statusMessage}`,
+			response,
+		} as unknown as JsonObject);
 	}
-	return data;
 }
